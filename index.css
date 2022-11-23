@@ -29,7 +29,7 @@ body {
     
     /* transform solution (ie8+, weird flow problems) */
     position: absolute;
-    top:48%;
+    top:50%;
     left: 50%;
     -ms-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translate(-100%,-50%);
@@ -79,11 +79,7 @@ body {
 /*    letter-spacing: 2px;*/
 }
 
-li {
-    margin: 10px;
-width:300px;
-height:50%;
-}
+
 
 a {
     text-decoration: none;
@@ -122,8 +118,8 @@ body{
 }
 
 .share-button{
-  width: 200px;
-  height: 50px;
+  width:100px;
+  height:20px;
   background: #dfe6e9;
   border-radius:40px;
   display: flex;
@@ -146,7 +142,7 @@ body{
   background: #2d3436;
   color: #f1f1f1;
   text-align: center;
-  line-height: 50px;
+  line-height: 20px;
   z-index: 999;
   transition: .6s linear;
   border-radius: 20px;
@@ -159,7 +155,7 @@ body{
 
 .share-button a{
   flex: 1;
-  font-size: 26px;
+  font-size: 15px;
   color: #2d3436;
   text-align: center;
   transform: translateX(-100%);
