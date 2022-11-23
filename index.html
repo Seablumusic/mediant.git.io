@@ -8,10 +8,8 @@
 
     
 <style type="text/css">
-    *{
-        margin:0;
-        padding:0;
-    }   
+    
+        
     #head{
         position: fixed;
         left: 0;
@@ -28,19 +26,19 @@
         height: 50px;
         position: fixed;
         overflow: hidden;
-        background-color: rgba(77, 76, 76, 0.45); 
+        background-color: rgba(77, 76, 76, 0.459); 
         list-style: none;
     }
     #head li a {
         display: block;
         float: left;
         padding: 3px;
-        width: 85px;
+        width: 80px;
         top:0px;
         height: 40px;
         margin-top: 5px;
         margin-left: 1%;
-        margin-right: 50px;
+        margin-right: 2%;
         text-align: center;
         font-family: "微软雅黑";
         color: rgb(255, 255, 255);
@@ -55,125 +53,59 @@
         float: right;
     }
     #body{
-        height: 100%;
-        width:100%;
+ 
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
         backdrop-filter: 20px;
-        background:  url(./image/16.png) no-repeat;
-        background-size: cover;
-        position:absolute;
-        overflow: hidden; 
+        background:url(./image/14.png); 
     }
-
-    h1{
-        color:#ffff;
-        position:absolute;
-        top:200px;
-        right:40%;
-        FONT-SIZE: 32px;
-        margin: 0 0 16px;
-        font-weight: 800;
-        display: block;
-        margin-block-start: 0.67em;
-        margin-block-end: 0.67em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-    }
-    h2{
-        color:#ffff;
-        position:absolute;
-        top:269px;
-        right:38%;
-        FONT-SIZE: 16px;
-        margin: 0 0 32px;
-        font-weight: 400;
-        display: block;
-        margin-block-start: 0.83em;
-        margin-block-end: 0.83em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-    }
-    .box1{
-        position: absolute;
-        top: 120%;
-        left: 80px;
-        width:1700px;
-        height:580px;
-        background:rgba(255,255,255,0.5);
-        margin:30px auto;
-        padding:20px;
-    }   
-    .box1 .head span{
-        font-size:18px;
-        color:#ffff;
-    }
-    .box1 .head{
-        margin-bottom:20px;
-    }
-    .box1 .head a{
-        text-decoration:none;
-        float:right;
-        font-size:15px;
-        color:block; 
-    }
-    .box1 .head a:hover{
-        color:rgb(41, 51, 66);
-    }
-    .box1 ul li{
-        width:400px;
-        height:240px;
-        list-style:none;
-        position:relative;
-        float:left;
-        margin-left:20px;
-        margin-bottom:20px;
-        overflow:hidden;
-    }
-    .box1 ul li .deatil{
-        width:400px;
-        height:240px;
-        background:rgba(0,0,0,0.2);
-        position:absolute;
-        top:-240px;
-        -webkit-transition:all 0.3s ease;
-        -o-transition:all 0.3s ease;
-        -moz-transition:all 0.3s ease;
-        -ms-transition:all 0.3s ease;
-        /* 适配不同浏览器早期版本 */
-    }
-    .box1 ul li .deatil h2{
-        font-size:18px;
-        color:#fff;
-        text-align:center;
-        padding-top:30px;
-    }
-    .box1 ul li .deatil p{
-        font-size:16px;
-        text-align:center;
-        margin:30px;
-        color:#fff;
-    }
-    .box1 ul li .deatil a{
-        font-size:15px;
-        display:block;
-        color:#fff;
-        background-color:rgba(0, 0, 0, 0.5);
-        text-decoration:none;
-        width:100px;
-        height:40px;
-        text-align:center;
-        line-height:40px;
-        margin:0 auto;
-    }
-    .box1 ul li:hover .deatil{
-        top:0;
-    }
-    input::-webkit-input-placeholder {
-        color:rgba(0,0,0,0.6);
-        font-size:15px;
-    }
+   
+    html,body{
+    margin: 0;
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width: 500px;
+    height: 30px;
+    background:linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+    position: relative;
+    z-index: 0;
+}
+.btn::before{
+    position:absolute;
+    content: '';
+    left: 0;
+    bottom:0;
+    width: 100%;
+    height: 0;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    background: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    z-index: -1;
+}
+.btn:hover::before{
+    top: 0;
+    height: 100%;
+}
+.btn:active{
+    top: 2px;
+}
     
 </style>
 
@@ -188,7 +120,7 @@
         
     </div>
 <br\>
-<div style="height: 1000px;">
+<div style="height: 300px;">
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -198,7 +130,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   </head>
   <body>
-    <div class="share-button" style="left:1230px ;">
+    <div class="share-button"  style="right: -610px;top: -220px;">
       <span><i class="fas fa-share-alt"></i>&nbsp; </span>
       <a href="https://www.facebook.com/sharer.php?title=http://seablu.ga " ><i class="fab fa-facebook-f"></i></a>
       <a href="https://twitter.com/share?text=http://seablu.ga " ><i class="fab fa-twitter"></i></a>
@@ -210,31 +142,27 @@
 
 <div class="box">
     <div class="content">
-       
+       <img  src="./image/图片1.png" class="pic">
         <div class="name">@seablu</div>
 
         <div class="subtitle">☀ The music maker</div>
         
-        <ul class="links">
-            <li class="linkli"><a href="https://twitter.com/seabluuu"></a></li>
+        
             
-            <li class="linkli"><a href="https://soundcloud.com/seablu" style="  border:5px solid #333;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;soundcloud&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
             
-            <li class="linkli"><a href="https://twitter.com/seabluuu"></a></li>
-            <li class="linkli"><a href="https://twitter.com/seabluuu" style=" border:5px solid #333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;twitter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+        <br><br><a href="https://soundcloud.com/seablu" ><button class="btn">soundcloud</button></a>
             
-            <li class="linkli"><a href="https://twitter.com/seabluuu"></a></li>
-            <li class="linkli"><a href="https://www.youtube.com/channel/UCrcjJFZ8aKH1b0mSEQ16ebg" style=" border:5px solid #333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;youtube&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+            <br><br><a href="https://twitter.com/seabluuu" ><button class="btn">twitter</button></a>
             
-            <li class="linkli"><a href="https://twitter.com/seabluuu"></a></li>
-            <li class="linkli"><a href="https://www.instagram.com/seablu_music/" style=" border:5px solid #333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instagram&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
             
-            <li class="linkli"><a href="https://twitter.com/seabluuu"></a></li>
-            <li class="linkli"><a href="https://www.facebook.com/profile.php?id=100042321274598" style=" border:5px solid #333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;facebook&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+            <br><br><a href="https://www.youtube.com/channel/UCrcjJFZ8aKH1b0mSEQ16ebg" ><button class="btn">youtube</button></a>
             
-            <li class="linkli"><a href="https://twitter.com/seabluuu"></a></li>
-
-            <a href="http://seablu.ga"><IMG src="./image/图3.png"  ></a>
+            
+            <br><br><a href="https://www.instagram.com/seablu_music/" ><button class="btn">instagram</button></a>
+            
+            <br><br><a href="https://www.facebook.com/profile.php?id=100042321274598" ><button class="btn">facebook</button></a>
+            
+            <br><br><a href="http://seablu.ga"><IMG src="./image/图3.png"  ></a>
         </ul>
     </div>
 </div>
