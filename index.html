@@ -1,16 +1,90 @@
 <html>
+<!--主页面-->
+
 <head>
-<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-
-
-<title>Scout Long</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf8" />
+<title>Scott Loong</title>
 <link rel="icon" href="1111.ico" type="image/x-icon">
-            <!--收藏夹显示图标-->
-            <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
-
-    
+<!--收藏夹显示图标-->
+<link rel="shortcut icon" href="logo.ico" type="image/x-icon">  
 <style type="text/css">
+    *{
+        margin:0;
+        padding:0;
+    }
+    .box{
+        position: absolute;
+        top: 129%; 
+        left: 50%;
+        width:550px;
+        height:550px;
+        background:rgba(255,255,255,0.5);
+        margin:30px auto;
+        padding:20px;
+    }
+    .box .head span{
+        font-size:18px;
+        color:#333;
+    }
     
+    .box .head a{
+        text-decoration:none;
+        float:right;
+        font-size:"3";
+        color:block; 
+    }
+    .box .head a:hover{
+        color:rgb(41, 51, 66);
+    }
+    .box ul li{
+        width:400px;
+        height:240px;
+        list-style:none;
+        position:relative;
+        float:left;
+        margin-left:20px;
+        margin-bottom:20px;
+        overflow:hidden;
+    }
+    .box ul li .deatil{
+        width:400px;
+        height:240px;
+        background:rgba(0,0,0,0.2);
+        position:absolute;
+        top:-240px;
+        -webkit-transition:all 0.3s ease;
+        -o-transition:all 0.3s ease;
+        -moz-transition:all 0.3s ease;
+        -ms-transition:all 0.3s ease;
+        /* 适配不同浏览器早期版本 */
+    }
+    .box ul li .deatil h2{
+        font-size:18px;
+        color:#fff;
+        text-align:center;
+        padding-top:30px;
+    }
+    .box ul li .deatil p{
+        font-size:16px;
+        text-align:center;
+        margin:30px;
+        color:#fff;
+    }
+    .box ul li .deatil a{
+        font-size:15px;
+        display:block;
+        color:#fff;
+        background-color:rgba(0, 0, 0, 0.5);
+        text-decoration:none;
+        width:100px;
+        height:40px;
+        text-align:center;
+        line-height:40px;
+        margin:0 auto;
+    }
+    .box ul li:hover .deatil{
+        top:0;
+    }
         
     #head{
         position: fixed;
@@ -28,19 +102,19 @@
         height: 50px;
         position: fixed;
         overflow: hidden;
-        background-color: rgba(77, 76, 76, 0.459); 
+        background-color: rgba(77, 76, 76, 0.45); 
         list-style: none;
     }
     #head li a {
         display: block;
         float: left;
         padding: 3px;
-        width: 80px;
+        /* width: 85px;
         top:0px;
-        height: 40px;
+        height: 40px; */
         margin-top: 5px;
         margin-left: 1%;
-        margin-right: 2%;
+        margin-right: 50px;
         text-align: center;
         font-family: "微软雅黑";
         color: rgb(255, 255, 255);
@@ -55,31 +129,128 @@
         float: right;
     }
     #body{
- 
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
         backdrop-filter: 20px;
-        background:url(./image/14.png); 
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./image/14.jpg); 
     }
-   
-    html,body{
-    margin: 0;
-    height: 100%;
-}
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.btn{
+    h1{
+        color:#ffff;
+        position:absolute;
+        top: 300px;
+        right:43%;
+        FONT-SIZE: 50px;
+        margin: 0 0 16px;
+        font-weight: 800;
+        display: block;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    h2{
+        color:#ffff;
+        position:absolute;
+        top:35px;
+        FONT-SIZE: 28px;
+        margin: 0 0 32px;
+        font-weight: 400;
+        display: block;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    .box1{
+        position: absolute;
+        top: 120%;
+        left: 80px;
+        width:1700px;
+        height:580px;
+        background:rgba(255,255,255,0.5);
+        margin:30px auto;
+        padding:20px;
+    }   
+    .box1 .head span{
+        font-size:18px;
+        color:#333;
+    }
+    .box1 .head{
+        margin-bottom:20px;
+    }
+    .box1 .head a{
+        text-decoration:none;
+        float:right;
+        font-size:15px;
+        color:block; 
+    }
+    .box1 .head a:hover{
+        color:rgb(41, 51, 66);
+    }
+    .box1 ul li{
+        width:400px;
+        height:240px;
+        list-style:none;
+        position:relative;
+        float:left;
+        margin-left:20px;
+        margin-bottom:20px;
+        overflow:hidden;
+    }
+    .box1 ul li .deatil{
+        width:400px;
+        height:240px;
+        background:rgba(0,0,0,0.2);
+        position:absolute;
+        top:-240px;
+        -webkit-transition:all 0.3s ease;
+        -o-transition:all 0.3s ease;
+        -moz-transition:all 0.3s ease;
+        -ms-transition:all 0.3s ease;
+        /* 适配不同浏览器早期版本 */
+    }
+    .box1 ul li .deatil h2{
+        font-size:18px;
+        color:#fff;
+        text-align:center;
+        padding-top:30px;
+    }
+    .box1 ul li .deatil p{
+        font-size:16px;
+        text-align:center;
+        margin:30px;
+        color:#fff;
+    }
+    .box1 ul li .deatil a{
+        font-size:15px;
+        display:block;
+        color:#fff;
+        background-color:rgba(0, 0, 0, 0.5);
+        text-decoration:none;
+        width:100px;
+        height:40px;
+        text-align:center;
+        line-height:40px;
+        margin:0 auto;
+    }
+    .box1 ul li:hover .deatil{
+        top:0;
+    }
+    input::-webkit-input-placeholder {
+        color:rgba(0,0,0,0.6);
+        font-size:15px;
+    }
+    .btn{
+        top:-10% ;
+        left: 40.5%;
     width: 300px;
-    height: 30px;
-    background:linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+    height: 80px;
+    background:linear-gradient(315deg, #000000 0%, #000000 74%);
     border: none;
     border-radius: 10px;
     font-family: 'Lato', sans-serif;
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 15px;
     color: #fff;
     box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
@@ -98,7 +269,7 @@ body{
     height: 0;
     transition: all 0.3s ease;
     border-radius: 10px;
-    background: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    background: linear-gradient(315deg, #000000 0%, #000000 74%);
     z-index: -1;
 }
 .btn:hover::before{
@@ -108,72 +279,65 @@ body{
 .btn:active{
     top: 2px;
 }
-    
 </style>
 
 </head>
 
 <body id="body">
     <div id="head">
-    <link rel="stylesheet" type="text/css" href="index.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:600,700" rel="stylesheet">
-        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
-        <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!--顶部导航栏-->
+        <li>
+        
+        
+                   
+            <a href="index.html" style="display:block; margin-right:9px;position:fixed; left:0%;top:5px; height:25px ; width: 100px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:15px;color:rgba(255,255,255,0.8);">🌊</a>     
+          <a href="https://twitter.com/seabluuu" ><img src=".\image\favicon-tbn.png" style="display:block;margin-right:9px; position:fixed; right:15%;top:15px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:15px;color:rgba(255,255,255,0.8);"></a>
+          <a href="https://soundcloud.com/seablu" ><img src=".\image\sd.png" style="display:block; margin-right:9px;position:fixed; right:12%;top:15px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:15px;color:rgba(255,255,255,0.8);"></a>      
+          <a href="https://www.youtube.com/channel/UCrcjJFZ8aKH1b0mSEQ16ebg" ><img src=".\image\youtube.png" style="display:block; margin-right:9px;position:fixed; right:9%;top:15px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:15px;color:rgba(255,255,255,0.8);"></a>     
+          <a href="https://www.instagram.com/seablu_music/ " ><img src=".\image\favicon-tbn (1).png" style="display:block; margin-right:9px;position:fixed; right:6%;top:15px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:15px;color:rgba(255,255,255,0.8);"></a>   
+          <a href="https://www.facebook.com/profile.php?id=100042321274598 " ><img src=".\image\facebook.png" style="display:block; margin-right:9px;position:fixed; right:3%;top:15px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:15px;color:rgba(255,255,255,0.8);"></a>       
+          
+        
+        </li>
         
     </div>
 <br\>
-
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-  </head>
-  <body>
-    <div class="share-button"  style="position:fixed;left:70%;top:2%; ">
-      <span><i class="fas fa-share-alt"></i>&nbsp; </span>
-      <a href="https://www.facebook.com/sharer.php?title=http://seablu.ga " ><i class="fab fa-facebook-f"></i></a>
-      <a href="https://twitter.com/share?text=http://seablu.ga " ><i class="fab fa-twitter"></i></a>
-      <a href="https://mail.google.com/mail/?view=cm&to=&su=http://seablu.ga"><i class="fab fa-google"></i></a>
-      <a href="http://www.linkedin.com/shareArticle?spm= &mini=true&url=http://seablu.ga"><i class="fab fa-linkedin-in"></i></a>
-    </div>
-  </body>
-</html>
-
-<div class="box">
-    <div class="content">
-       <img  src="./image/图片1.png" class="pic">
-        <div class="name">@seablu</div>
-
-        <div class="subtitle">☀ The music maker</div>
-        
-        
-            
-            
-        <br><a href="https://soundcloud.com/seablu" ><button class="btn">soundcloud</button></a>
-            
-            <br><br><a href="https://twitter.com/seabluuu" ><button class="btn">twitter</button></a>
-            
-            
-            <br><br><a href="https://www.youtube.com/channel/UCrcjJFZ8aKH1b0mSEQ16ebg" ><button class="btn">youtube</button></a>
-            
-            
-            <br><br><a href="https://www.instagram.com/seablu_music/" ><button class="btn">instagram</button></a>
-            
-            <br><br><a href="https://www.facebook.com/profile.php?id=100042321274598" ><button class="btn">facebook</button></a>
-            
-            <br><br><a href="http://seablu.ga"><IMG src="./image/图3.png"  ></a>
-        </ul>
-    </div>
+<div style="height: 2500px;">
 </div>
-<div>
+<h1 >Seablu</h1>
+
+    <img src=".\image\图片1.png" style="  position: absolute;
+    top: 150%; 
+    left: 15%;
+    width:250px;
+    height:250px;
+    
+    margin:30px auto;
+    padding:20px;">
+
+
+
+    <div class="box">
+    <head><h3 style="font-size: 25PX;">About me:</h3> 
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp; Cantonese electronic music producer Seablu(aka Scott Loong) is an everyman who loves Japanese culture and now lives in Guangdong, combining his unconventional sound, anime and video game influences with EDM. He made his breakthrough at the age of 20 with his debut single in 2022, adding Bubbles to his music with various sounds, including water droplets and sci-fi elements. In his choice of theme, Seablu's music adds more innovations to the original basic knowledge.</h2>
+    </head>    
+</div>
+
+    <!--热门图片内容-->  
+
  
-<a href="mailto:me@Scoutlong2001@gmail.com" style="position:fixed; left:2%;top:96%; font-size:15px; color: #5b5e5f; text-decoration:underline;">
-    Contact Me</a>
 </div>
+<a href="#"><img src=".\image\11.png" style="  position: absolute;
+    top: 260%; 
+    left: 35%;
+    width:415px;
+    height:415px;
+    
+    margin:30px auto;
+    padding:20px;"></a>
 
+<a href="https://soundcloud.com/seablu"><button class="btn">Bubbles<br>Seablu · single · 2022 .</button></a>
+<div style="height: 100px;"></div>
 
 </body>
 
