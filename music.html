@@ -2,90 +2,16 @@
 <!--主页面-->
 
 <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:600,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html" charset="utf8" />
 <title>Scott Loong</title>
 <link rel="icon" href="1111.ico" type="image/x-icon">
 <!--收藏夹显示图标-->
 <link rel="shortcut icon" href="logo.ico" type="image/x-icon">  
 <style type="text/css">
-    *{
-        margin:0;
-        padding:0;
-    }
-    .box{
-        position: absolute;
-        top: 10%; 
-        left: 50%;
-        width:550px;
-        height:550px;
-        background:rgba(255,255,255,0.5);
-        margin:30px auto;
-        padding:20px;
-    }
-    .box .head span{
-        font-size:18px;
-        color:#333;
-    }
-    
-    .box .head a{
-        text-decoration:none;
-        float:right;
-        font-size:"3";
-        color:block; 
-    }
-    .box .head a:hover{
-        color:rgb(41, 51, 66);
-    }
-    .box ul li{
-        width:400px;
-        height:240px;
-        list-style:none;
-        position:relative;
-        float:left;
-        margin-left:20px;
-        margin-bottom:20px;
-        overflow:hidden;
-    }
-    .box ul li .deatil{
-        width:400px;
-        height:240px;
-        background:rgba(0,0,0,0.2);
-        position:absolute;
-        top:-240px;
-        -webkit-transition:all 0.3s ease;
-        -o-transition:all 0.3s ease;
-        -moz-transition:all 0.3s ease;
-        -ms-transition:all 0.3s ease;
-        /* 适配不同浏览器早期版本 */
-    }
-    .box ul li .deatil h2{
-        font-size:18px;
-        color:#fff;
-        text-align:center;
-        padding-top:30px;
-    }
-    .box ul li .deatil p{
-        font-size:16px;
-        text-align:center;
-        margin:30px;
-        color:#fff;
-    }
-    .box ul li .deatil a{
-        font-size:15px;
-        display:block;
-        color:#fff;
-        background-color:rgba(0, 0, 0, 0.5);
-        text-decoration:none;
-        width:100px;
-        height:40px;
-        text-align:center;
-        line-height:40px;
-        margin:0 auto;
-    }
-    .box ul li:hover .deatil{
-        top:0;
-    }
-        
+     
     #head{
         position: fixed;
         left: 0;
@@ -242,8 +168,8 @@
         font-size:15px;
     }
     .btn{
-        top:77% ;
-        left: 40.5%;
+      
+    left: -2%;
     width: 300px;
     height: 80px;
     background:linear-gradient(315deg, #000000 0%, #000000 74%);
@@ -288,39 +214,34 @@
     <!--顶部导航栏-->
         <li>
         
-            <a href="music.html" style="display:block; margin-right:9px;position:fixed; left:18%;top:5px; height:25px ; width: 100px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:18px;color:rgba(255,255,255,0.8);">music</a>       
+            <a href="music.html" style="display:block; margin-right:9px;position:fixed; left:21%;top:10px; height:25px ; width: 100px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:18px;color:rgba(255,255,255,0.8);">music</a>       
 
-            <a href="about.html" style="display:block; margin-right:9px;position:fixed; left:9%;top:5px; height:25px ; width: 100px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:18px;color:rgba(255,255,255,0.8);">about me</a>       
+            <a href="about.html" style="display:block; margin-right:9px;position:fixed; left:11%;top:10px; height:25px ; width: 100px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:18px;color:rgba(255,255,255,0.8);">about me</a>       
         
-            <a href="index.html" style="display:block; margin-right:9px;position:fixed; left:0%;top:5px; height:25px ; width: 100px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:15px;color:rgba(255,255,255,0.8);">🌊</a>     
-          <a href="https://twitter.com/seabluuu" ><img src=".\image\favicon-tbn.png" style="display:block;margin-right:9px; position:fixed; right:15%;top:15px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:15px;color:rgba(255,255,255,0.8);"></a>
-          <a href="https://soundcloud.com/seablu" ><img src=".\image\sd.png" style="display:block; margin-right:9px;position:fixed; right:12%;top:15px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:15px;color:rgba(255,255,255,0.8);"></a>      
-          <a href="https://www.youtube.com/channel/UCrcjJFZ8aKH1b0mSEQ16ebg" ><img src=".\image\youtube.png" style="display:block; margin-right:9px;position:fixed; right:9%;top:15px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:15px;color:rgba(255,255,255,0.8);"></a>     
-          <a href="https://www.instagram.com/seablu_music/ " ><img src=".\image\favicon-tbn (1).png" style="display:block; margin-right:9px;position:fixed; right:6%;top:15px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:15px;color:rgba(255,255,255,0.8);"></a>   
-          <a href="https://www.facebook.com/profile.php?id=100042321274598 " ><img src=".\image\facebook.png" style="display:block; margin-right:9px;position:fixed; right:3%;top:15px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:15px;color:rgba(255,255,255,0.8);"></a>       
+            <a href="index.html" style="display:block; margin-right:9px;position:fixed; left:1%;top:10px; height:25px ; width: 100px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:15px;color:rgba(255,255,255,0.8);">🌊</a>  
+          <a href="https://twitter.com/seabluuu" ><img src=".\image\favicon-tbn.png" style="display:block;margin-right:9px; position:fixed; right:15%;top:20px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:15px;color:rgba(255,255,255,0.8);"></a>
+          <a href="https://soundcloud.com/seablu" ><img src=".\image\sd.png" style="display:block; margin-right:9px;position:fixed; right:12%;top:20px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:15px;color:rgba(255,255,255,0.8);"></a>      
+          <a href="https://www.youtube.com/channel/UCrcjJFZ8aKH1b0mSEQ16ebg" ><img src=".\image\youtube.png" style="display:block; margin-right:9px;position:fixed; right:9%;top:20px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:15px;color:rgba(255,255,255,0.8);"></a>     
+          <a href="https://www.instagram.com/seablu_music/ " ><img src=".\image\favicon-tbn (1).png" style="display:block; margin-right:9px;position:fixed; right:6%;top:20px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:15px;color:rgba(255,255,255,0.8);"></a>   
+          <a href="https://www.facebook.com/profile.php?id=100042321274598 " ><img src=".\image\facebook.png" style="display:block; margin-right:9px;position:fixed; right:3%;top:20px; border:0px;background:rgba(255,255,255,0.3);outline:none;caret-color:rgba(255,255,255,1);font-size:15px;color:rgba(255,255,255,0.8);"></a>       
           
         
         </li>
         
     </div>
 <br\>
+<div class="box">
+    <div class="content">
+        <div class="name"><a href="#"><img src=".\image\11.png" style="width:300px; height: 300px;"></a></div>
+        <div class="subtitle"><a href="https://soundcloud.com/seablu"><button class="btn">Bubbles<br>Seablu · single · 2022 .</button></a>
+            </div>
 
-<a href="#"><img src=".\image\11.png" style="  position: absolute;
-    top: 10%; 
-    left: 35%;
-    width:415px;
-    height:415px;
-    
-    margin:30px auto;
-    padding:20px;"></a>
-
-<a href="https://soundcloud.com/seablu"><button class="btn">Bubbles<br>Seablu · single · 2022 .</button></a>
 
 
 
  
 </div>
-
+</div>
 
 
 
