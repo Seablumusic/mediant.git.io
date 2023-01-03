@@ -121,7 +121,7 @@ body {
     align-content: center;
     flex-wrap: wrap;
     list-style-type: none;
-    font-size: 20px;
+    font-size: 16px;
     font-family: Raleway, sans-serif;
     font-weight: 650;
     
@@ -130,7 +130,7 @@ body {
 }
 
 li {
-    margin: 8px;
+    margin: 10px;
     color: #FFFFFF;
 }
 
